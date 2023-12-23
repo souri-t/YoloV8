@@ -1,0 +1,9 @@
+version: '3'
+services:
+    yolov8:
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./workspace:/workspace
+        image: yolov8:debian
+        command: bash
